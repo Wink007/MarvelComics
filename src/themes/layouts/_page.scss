@@ -1,0 +1,67 @@
+html {
+  min-height: 100%;
+  font-size: $font-size-base + px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  *:focus {
+    border: none;
+    outline: none;
+    // box-shadow: 0 0 1px 1px $color-grey-6;
+  }
+
+  body {
+    position: relative;
+    // min-width: $mobileMinWidth;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/bg.png') no-repeat 100% 0;
+    background-color: $bodyBgColor;
+    background-size: 50%;
+    font-family: $font-family-base;
+
+    /* Smoothing for fonts */
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-variant-ligatures: none;
+
+    /**
+    * Fix for mobile safari for rotate screen
+    * autoprefixer don't do that
+    */
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    .App {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+    }
+
+    #root {
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    #modal-root {
+      position: relative;
+      z-index: 1000;
+
+      .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+      }
+    }
+  }
+}

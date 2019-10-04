@@ -1,0 +1,63 @@
+@import 'themes/variables/_variables-default.scss';
+
+.Languages {
+  display: flex;
+  padding-left: $mobile-red;
+  font-size: rem(20);
+
+  a {
+    width: rem(40);
+    height: rem(40);
+    line-height: rem(40);
+    border-radius: 50%;
+    background-color: $color-yellow-dark;
+    color: $color-black;
+    text-align: center;
+
+    &:active,
+    &:focus {
+      color: $color-black;
+    }
+
+    &:first-child {
+      margin-right: $mobile-pink;
+    }
+  }
+
+  &.tablet {
+    padding-left: $tablet-red;
+    font-size: rem(16);
+  }
+
+  @include deviceDetect() {
+    display: flex;
+    font-size: rem(18);
+
+    a {
+      width: rem(40);
+      height: rem(40);
+      line-height: rem(40);
+      border-radius: 50%;
+      background-color: $color-yellow-dark;
+      text-align: center;
+
+      &:first-child {
+        margin-right: $desktop-brown;
+      }
+    }
+
+    @include respond-to($largeDesktop) {
+      font-size: rem(28);
+
+      a {
+        width: rem(64);
+        height: rem(64);
+        line-height: rem(64);
+
+        &:first-child {
+          margin-right: $largeDesktop-brown;
+        }
+      }
+    }
+  }
+}

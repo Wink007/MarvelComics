@@ -1,0 +1,66 @@
+// Sorted A o Z
+// $font-family-base: 'Roboto', 'Roboto Regular', sans-serif;
+$font-family-base: 'Rubik', sans-serif;
+$font-size-base: 12;
+$desktopMinWidth: 768px; // if you change this value, change it in export too
+
+// Media Queries Responsive
+$mobile : '(max-width: 480px)';
+$tablet: '(max-width: 767px) and (orientation : landscape)';
+$desktop: '(max-width: 1365px)';
+$largeDesktop: '(min-width: 1366px)';
+
+
+// Indentation styles: Vertical
+$largeDesktop-coral: 206px;
+$desktop-coral: 190px;
+// -----------------------
+$largeDesktop-red: 144px;
+$desktop-red: 56px;
+$tablet-red: 48px;
+$mobile-red: 24px;
+// -----------------------
+$largeDesktop-pink: 56px;
+$desktop-pink: 40px;
+$tablet-pink: 24px;
+$mobile-pink: 24px;
+// -----------------------
+$largeDesktop-dblue: 48px;
+$desktop-dblue: 24px;
+$tablet-dblue: 16px;
+$mobile-dblue: 16px;
+// -----------------------
+$largeDesktop-brown: 48px;
+$desktop-brown: 24px;
+$tablet-brown: 16px;
+$mobile-brown: 8px;
+
+// Indentation styles: Horizontal
+$largeDesktop-green: 144px;
+$desktop-green: 124px;
+$tablet-green: 96px;
+$mobile-green: 64px;
+// -----------------------
+$largeDesktop-orange: 80px;
+$desktop-orange: 56px;
+$tablet-orange: 48px;
+$mobile-orange: 48px;
+// -----------------------
+$largeDesktop-blue: 56px;
+$desktop-blue: 32px;
+$tablet-blue: 32px;
+$mobile-blue: 32px;
+// -----------------------
+$largeDesktop-violet: 48px;
+$desktop-violet: 24px;
+$tablet-violet: 24px;
+$mobile-violet: 24px;
+// -----------------------
+$largeDesktop-grey: 24px;
+$desktop-grey: 24px;
+$tablet-grey: 16px;
+$mobile-grey: 16px;
+
+:export {
+  desktopMinWidth: 768;
+};

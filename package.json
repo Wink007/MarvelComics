@@ -1,0 +1,51 @@
+{
+  "name": "corpsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "blueimp-md5-es6": "^2.7.4",
+    "classnames": "^2.2.6",
+    "crypto-js": "^3.1.9-1",
+    "dom-helpers": "^5.1.0",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.15",
+    "mobile-detect": "^1.4.3",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^5.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.2.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1",
+    "sanitize.css": "^11.0.0"
+  },
+  "scripts": {
+    "start": "REACT_APP_KEY=405eb4d0893502a7e2107a30b14c66ca663a8ece PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
